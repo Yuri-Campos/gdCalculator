@@ -1,0 +1,124 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbxmpou81rqx5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2nc64"]
+font_size = 32
+
+[node name="Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -250.0
+offset_right = 150.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.141176, 0.141176, 0.141176, 1)
+
+[node name="display" type="ColorRect" parent="background"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -130.0
+offset_top = 20.0
+offset_right = 130.0
+offset_bottom = 80.0
+grow_horizontal = 2
+color = Color(0.45098, 0.45098, 0.45098, 1)
+
+[node name="Label" type="Label" parent="background/display"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_right = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "30"
+label_settings = SubResource("LabelSettings_2nc64")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Container" type="GridContainer" parent="background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.0
+offset_top = -58.0
+offset_right = 42.0
+offset_bottom = 58.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+
+[node name="0" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "0"
+
+[node name="1" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "1"
+
+[node name="2" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "2"
+
+[node name="3" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "3"
+
+[node name="4" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "4"
+
+[node name="5" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "5"
+
+[node name="6" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "6"
+
+[node name="7" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "7"
+
+[node name="8" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "8"
+
+[node name="9" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "9"
+
+[node name="+" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "+"
+
+[node name="-" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "-"
+
+[node name="div" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "/"
+
+[node name="x" type="Button" parent="background/Container"]
+layout_mode = 2
+text = "X"
