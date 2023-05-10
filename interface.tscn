@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbxmpou81rqx5"]
+[gd_scene load_steps=3 format=3 uid="uid://cbxmpou81rqx5"]
+
+[ext_resource type="Script" path="res://interface.gd" id="1_cw2ty"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2nc64"]
 font_size = 32
@@ -10,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cw2ty")
 
 [node name="background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -38,7 +41,7 @@ offset_bottom = 80.0
 grow_horizontal = 2
 color = Color(0.45098, 0.45098, 0.45098, 1)
 
-[node name="Label" type="Label" parent="background/display"]
+[node name="texto" type="Label" parent="background/display"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -47,7 +50,7 @@ offset_left = -5.0
 offset_right = -5.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "30"
+text = "0"
 label_settings = SubResource("LabelSettings_2nc64")
 horizontal_alignment = 2
 vertical_alignment = 1
@@ -57,70 +60,106 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 13.0
-offset_top = 157.0
-offset_right = -14.0
-offset_bottom = -8.0
+offset_left = 23.0
+offset_top = 154.0
+offset_right = -21.0
+offset_bottom = -48.0
 grow_horizontal = 2
 grow_vertical = 2
-columns = 4
+columns = 3
 
-[node name="0" type="Button" parent="background/Container"]
+[node name="0" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "0"
 
-[node name="1" type="Button" parent="background/Container"]
+[node name="1" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "1"
 
-[node name="2" type="Button" parent="background/Container"]
+[node name="2" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "2"
 
-[node name="3" type="Button" parent="background/Container"]
+[node name="3" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "3"
 
-[node name="4" type="Button" parent="background/Container"]
+[node name="4" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "4"
 
-[node name="5" type="Button" parent="background/Container"]
+[node name="5" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "5"
 
-[node name="6" type="Button" parent="background/Container"]
+[node name="6" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "6"
 
-[node name="7" type="Button" parent="background/Container"]
+[node name="7" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "7"
 
-[node name="8" type="Button" parent="background/Container"]
+[node name="8" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "8"
 
-[node name="9" type="Button" parent="background/Container"]
+[node name="9" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "9"
 
-[node name="+" type="Button" parent="background/Container"]
+[node name="+" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "+"
 
-[node name="-" type="Button" parent="background/Container"]
+[node name="-" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "-"
 
-[node name="div" type="Button" parent="background/Container"]
+[node name="d" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "/"
 
-[node name="x" type="Button" parent="background/Container"]
+[node name="*" type="Button" parent="background/Container" groups=["button"]]
 layout_mode = 2
-text = "X"
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "*"
+
+[node name="r" type="Button" parent="background/Container" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "R"
+
+[node name="=" type="Button" parent="background/Container" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "="
